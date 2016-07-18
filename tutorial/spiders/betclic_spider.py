@@ -21,6 +21,7 @@ class BetclicSpider(scrapy.Spider):
     def parse(self, response):
         conn = psycopg2.connect(database="postgres", user="postgres", password="Martin00")
         print "XXXXXXXXXXXXXXXX1"
+        # tu vois ce changement? (lundi aprem)
         print conn
         print "XXXXXXXXXXXXXXX2"
         cur = conn.cursor()
